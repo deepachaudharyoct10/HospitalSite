@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details Form</title>
+    <link rel="stylesheet" href="hot.css">
+    <style>
+        body{
+        background-color:aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <header class="title">
+        <h1 class="heading">Welcome to details form</h1>
+        <p class="msg">heal and health Hospital</p> <br>
+        <p id="result"></p> <br>
+    </header>
+    <form action="form.php" method="post" class="new">
+        <p>
+            <label for="name" class="new1">Name : </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" />
+        </p>
+
+        <p>
+            <label for="name" class="new1">Gender : </label>
+            
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender" />
+        </p>
+
+        <p>
+            <label for="contact" class="new1">Contact : </label>
+            
+            <input type="text" name="phone_no" id="phone_no" placeholder="Enter your number" />
+        </p>
+
+        <p>
+            <label for="bill" class="new1">Total Bill: </label>
+            <input type="number" name="totalbill" id="totalbill">
+        </p>
+
+        <p>
+            <label for="admitdate" class="new1">Admit Date: </label>
+            <input type="date" name="admitdate" id="admitdate">
+        </p>
+
+        <p>
+            <label for="dischargedate" class="new1">Discharge Date: </label>
+            <input type="date" name="dischargedate" id="dischargedate">
+        </p>
+
+        <p>
+            <label for="question" class="new1">Enter your address : </label>
+            <!-- <br> -->
+            <textarea name="address" id="address" cols="15" rows="5"
+                placeholder="Enter your address"></textarea>
+        </p>
+
+        <p>
+            <label for="question" class="new1">Enter disease/problem : </label>
+            <!-- <br> -->
+            <textarea name="disease" id="disease" cols="30" rows="10"
+                placeholder="Enter disease/problem"></textarea>
+        </p>
+
+        <p>
+            <button id="submit" >Submit</button>
+            <button id="reset" background-color="red">Reset</button>
+        </p>
+    </form>
+</body>
+</html>
